@@ -1,0 +1,32 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://status.github.com/api/status.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 13 Feb 2013 20:51:21 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Content-Length:
+      - '55'
+    body:
+      encoding: US-ASCII
+      string: ! '{"status":"good","last_updated":"2013-02-13T20:51:09Z"}'
+    http_version: 
+  recorded_at: Wed, 13 Feb 2013 20:51:24 GMT
+recorded_with: VCR 2.4.0

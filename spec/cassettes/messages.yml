@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://status.github.com/api/messages.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 13 Feb 2013 20:51:22 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Content-Length:
+      - '3065'
+    body:
+      encoding: US-ASCII
+      string: ! '[{"status":"good","body":"Live updates are back on, and service hook
+        processing is back to normal.","created_on":"2013-02-13T20:03:42Z"},{"status":"minor","body":"We
+        are currently experiencing delays processing service hooks.","created_on":"2013-02-13T19:09:57Z"},{"status":"minor","body":"We
+        have disabled live updates while we investigate some issues.","created_on":"2013-02-13T04:59:41Z"},{"status":"good","body":"Everything
+        operating normally.","created_on":"2013-02-12T23:01:12Z"},{"status":"minor","body":"Code
+        search is currently unavailable. We''re working to restore service as soon
+        as possible.","created_on":"2013-02-12T21:57:29Z"},{"status":"good","body":"The
+        site is accessible again.","created_on":"2013-02-12T01:13:33Z"},{"status":"major","body":"We''re
+        currently investigating connectivity issues to GitHub","created_on":"2013-02-12T01:08:30Z"},{"status":"good","body":"Everything
+        operating normally.","created_on":"2013-02-09T14:26:10Z"},{"status":"minor","body":"We''ve
+        completed our maintenance period. We expect some slowness as we return to
+        normal operation. ","created_on":"2013-02-09T14:07:51Z"},{"status":"major","body":"We''re
+        continuing database maintenance and remain in maintenance mode. We''ll update
+        as we return to normal operation.","created_on":"2013-02-09T13:36:29Z"},{"status":"major","body":"As
+        per our scheduled window, we are starting brief database maintenance. GitHub
+        will be in maintenance mode for approximately 10 minutes.","created_on":"2013-02-09T13:16:13Z"},{"status":"good","body":"Everything
+        operating normally.","created_on":"2013-02-08T18:17:30Z"},{"status":"minor","body":"We
+        are preparing to perform some unscheduled fileserver maintenance. This will
+        affect a rolling set 0.2% of repositories, which will be unable to push or
+        pull for the duration of the maintenance.","created_on":"2013-02-08T17:20:45Z"},{"status":"good","body":"Everything
+        operating normally.","created_on":"2013-02-08T15:51:41Z"},{"status":"minor","body":"We
+        are seeing a slight increase in error rates due to problems with a fileserver
+        cluster. We''ve identified the problem and are working to resolve it now.","created_on":"2013-02-08T15:11:21Z"},{"status":"good","body":"Everything
+        operating normally.","created_on":"2013-02-08T11:30:10Z"},{"status":"minor","body":"We
+        are seeing a slight increase in errors being reported to customers due to
+        problems with one of our fileserver clusters. We are investigating.","created_on":"2013-02-08T10:51:06Z"},{"status":"good","body":"Everything
+        operating normally.","created_on":"2013-02-07T06:33:00Z"},{"status":"minor","body":"We''re
+        receiving reports from user''s that the timeout issues have been resolved.
+        If you''re still experiencing trouble, please contact us. https://github.com/support","created_on":"2013-02-07T06:14:02Z"},{"status":"minor","body":"We
+        continue to investigate reports of intermittent timeouts from some users.","created_on":"2013-02-07T04:22:59Z"},{"status":"minor","body":"We''re
+        investigating reports that GitHub is timing out for some users.","created_on":"2013-02-07T02:32:09Z"}]'
+    http_version: 
+  recorded_at: Wed, 13 Feb 2013 20:51:25 GMT
+recorded_with: VCR 2.4.0

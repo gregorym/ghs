@@ -1,0 +1,33 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://status.github.com/api/last-message.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 13 Feb 2013 20:51:22 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Content-Length:
+      - '135'
+    body:
+      encoding: US-ASCII
+      string: ! '{"status":"good","body":"Live updates are back on, and service hook
+        processing is back to normal.","created_on":"2013-02-13T20:03:42Z"}'
+    http_version: 
+  recorded_at: Wed, 13 Feb 2013 20:51:25 GMT
+recorded_with: VCR 2.4.0
